@@ -7,5 +7,12 @@
 using namespace std;
 
 int main() {
+    // Declare variables
+
+    // Ask for length and idth of first rectangle
+
+    // Calculate the areas
+
+    // Print the areas
         return 0;
 }
