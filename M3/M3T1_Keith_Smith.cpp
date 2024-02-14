@@ -10,7 +10,7 @@ int main() {
     // Declare variables
     double width1, height1, width2, height2;
     double area1, area2;
-    
+
     // Ask for length and width of first rectangle
     cout << "What is the width of the first rectangle? ";
     cin >> width1;
@@ -28,6 +28,16 @@ int main() {
     // Print the areas
     cout << "The area of the first rectangle is " << area1 << endl;
     cout << "The area of the second rectangle is " << area2 << endl;
+
+        if (area1>area2) {
+        cout << "The first rectangle is larger than the second." << endl;
+    }
+    else if (area1<area2) {
+        cout << "The second rectangle is larger than the first." << endl;
+    }
+    else if (area1==area2) {
+        cout << "The rectangles are the same." << endl;
+    }
     
         return 0;
 }
