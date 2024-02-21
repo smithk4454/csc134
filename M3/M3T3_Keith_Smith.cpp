@@ -14,6 +14,11 @@ int main() {
     int die1, die2;
     int seed;
 
+    // Set random seed
+    // cout << "Enter lucky number: ";
+    // cin >> seed;
+    srand(time(0)); // our lucky number is the time
+
 
     // Ask
      cout << "Welcome to the craps table" << endl;
