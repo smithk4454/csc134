@@ -5,12 +5,15 @@
 
 #include <iostream>
 #include <cstdlib> // for rand()
+#include <ctime>   // for time()
 using namespace std;
 
 int main() {
     // Declare variables
     int roll;
     int die1, die2;
+    int seed;
+
 
     // Ask
      cout << "Welcome to the craps table" << endl;
@@ -20,11 +23,11 @@ int main() {
     roll = die1 + die2;
 
     // Calculate
-    cout << "Your roll was : " << roll << endl;
+    cout << "Roll " << die1 << " and " << die2 << " totals: " << roll << endl;
     if (roll == 7 || roll == 11) {
         cout << "You Win!" << endl;
     }
-    else if (roll == 2 || roll 3 || roll == 12) {
+    else if (roll == 2 || roll == 3 || roll == 12) {
         cout << "You lose..." << endl;
     }
     else {
