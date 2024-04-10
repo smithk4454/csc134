@@ -22,7 +22,7 @@ const int LIVE  = 2;
         name = "Blank";
     }
     if (shell == 2){
-        name = "Live"
+        name = "Live";
     }
     return name;
 }
