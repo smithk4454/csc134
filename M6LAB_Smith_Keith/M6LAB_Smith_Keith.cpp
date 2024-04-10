@@ -16,7 +16,7 @@ const int BLANK = 1;
 const int LIVE  = 2;
 
 // global array for the magazine
-int magazine[MAX_SIZE] magazine = {LIVE, BLANK, LIVE, BLANK, EMPTY, EMPTY};
+int magazine[MAX_SIZE] = {LIVE, BLANK, LIVE, BLANK, EMPTY, EMPTY};
 
 int main() {
     cout << "M6LAB1" << endl;
