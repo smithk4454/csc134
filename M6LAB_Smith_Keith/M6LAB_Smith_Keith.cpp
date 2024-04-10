@@ -22,7 +22,15 @@ int main() {
     cout << "M6LAB1" << endl;
     // range based for loop
     for (int shell : magazine) {
-        cout << shell << ",";
+        //cout << shell << ",";
+        
+    }
+    cout << endl << ednl;
+    // index based for loop
+    for (int i=0; i < MAX_SIZE; i ++) {
+        int shell = magazine[i];
+        string name = shell_name(shell);
+        cout << name << ",";
     }
     return 0;
 }
