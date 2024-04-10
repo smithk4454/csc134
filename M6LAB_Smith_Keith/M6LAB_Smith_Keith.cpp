@@ -16,13 +16,13 @@ const int BLANK = 1;
 const int LIVE  = 2;
 
 // global array for the magazine
-int magazine[MAX_SIZE] magazine = {0};
+int magazine[MAX_SIZE] magazine = {LIVE, BLANK, LIVE, BLANK, EMPTY, EMPTY};
 
 int main() {
     cout << "M6LAB1" << endl;
     // range based for loop
     for (int shell : magazine) {
-        cout << shell << endl;
+        cout << shell << ",";
     }
     return 0;
 }
