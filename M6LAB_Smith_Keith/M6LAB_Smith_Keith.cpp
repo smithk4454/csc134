@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+#include "M6LAB1_utility.h"
 /*
 CSC 134
 M6LAB1 - Buckshot Roulette
@@ -23,9 +23,9 @@ int main() {
     // range based for loop
     for (int shell : magazine) {
         //cout << shell << ",";
-        
+
     }
-    cout << endl << ednl;
+    cout << endl << endl;
     // index based for loop
     for (int i=0; i < MAX_SIZE; i ++) {
         int shell = magazine[i];
