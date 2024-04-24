@@ -86,6 +86,7 @@ void linked_list() {
     // connect nodes 1 and 2
     head = &first; // point to address of first
     first.next = &second;// first points to second
+    second.next = &third;
 
     // Finally, walk the list and print each item
     Node* probe = head; // probe is our temporary pointer
