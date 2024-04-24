@@ -38,7 +38,6 @@ void array_example() {
     cout << endl;
 }
 
-=======
 void vector_example() {
         // requires the #include <vector> command up top
         vector<int> nums; // an empty vector of integers
@@ -46,7 +45,7 @@ void vector_example() {
         nums.push_back(1);
         nums.push_back(2);
         nums.push_back(3);
-        cout << "Vector contains " << nums.sise() << " numbers" << endl;
+        cout << "Vector contains " << nums.size() << " numbers" << endl;
         // index access works like arrays
         for(int i=0; i<nums.size(); i++) {
             cout << nums[i] << ",";
