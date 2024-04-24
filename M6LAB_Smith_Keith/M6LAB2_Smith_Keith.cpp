@@ -58,6 +58,7 @@ void vector_example() {
             cout << num << ",";
         }
         cout << endl;
+}
 
 // this should be up top
 struct Node {
@@ -67,18 +68,32 @@ struct Node {
 
 
 void linked_list() {
-    cout << "Exampl 3: Linked Lists" >> endl;
+    cout << "Exampl 3: Linked Lists" << endl;
     Node* head= nullptr; // empty list
     // now make some nodes
     Node first;
     first.num = 1;
     first.next = nullptr; // null pointer -- "nowhere"
+    Node second;
+    second.num = 2;
+    second.next = nullptr;
+    Node third;
+    third.num = 3;
+    third.next = nullptr;
 
     // print out the first node
     cout << "first.num = " << first.num << endl;
     // connect nodes 1 and 2
     head = &first; // point to address of first
     first.next = &second;// first points to second
+
+    // Finally, walk the list and print each item
+    Node* probe = head; // probe is our temporary pointer
+    while (probe != nullptr) {
+        cout << "Next node: " << probe->num << endl;
+        probe = probe->next;
+    }
+    cout << "Reached end of list" << endl;
 
 }
 
