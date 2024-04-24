@@ -28,6 +28,9 @@ void array_example() {
     const int SIZE = 5; // absolute max
     int max = 3;        // current max
     int nums[SIZE] = {1, 2, 2, 0, 0};
+    // add a fourth item
+    nums[max] = 3;
+    max = max+1;
     // print each item
     for (int i=0; i<max; i++) {
       cout << nums[i] << ",";
