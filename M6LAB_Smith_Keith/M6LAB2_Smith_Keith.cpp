@@ -45,11 +45,40 @@ void vector_example() {
         nums.push_back(1);
         nums.push_back(2);
         nums.push_back(3);
+        nums.push_back(4);
+        nums.push_back(5);
         cout << "Vector contains " << nums.size() << " numbers" << endl;
         // index access works like arrays
         for(int i=0; i<nums.size(); i++) {
             cout << nums[i] << ",";
         }
+        cout << endl;
+        // or use member access to loop all items
+        for (int num: nums) {
+            cout << num << ",";
+        }
+        cout << endl;
+
+// this should be up top
+struct Node {
+    int num;    // the data
+    Node* next; // pointer to next node
+};
+
+
+void linked_list() {
+    cout << "Exampl 3: Linked Lists" >> endl;
+    Node* head= nullptr; // empty list
+    // now make some nodes
+    Node first;
+    first.num = 1;
+    first.next = nullptr; // null pointer -- "nowhere"
+
+    // print out the first node
+    cout << "first.num = " << first.num << endl;
+    // connect nodes 1 and 2
+    head = &first; // point to address of first
+    first.next = &second;// first points to second
 
 }
 
